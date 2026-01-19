@@ -44,7 +44,7 @@ Armazena o hash da senha mestre.
 }
 ```
 
-### passwords
+#### passwords
 Armazena as senhas dos servições
 
 ```json
@@ -58,7 +58,7 @@ Armazena as senhas dos servições
 
 ###1️⃣ Pré-requisitos
 - Node.js
- MongoDB rodando em localhost:27017
+- MongoDB rodando em localhost:27017
 
 ### 2️⃣ Clonar o repositório
 ``` git clone https://github.com/seu-usuario/seu-repositorio.git```
@@ -95,6 +95,7 @@ Armazena as senhas dos servições
 3. Verify password
 4. Exit
 ```
+
 
 👨‍💻 Autor
 Luiggy Alves
