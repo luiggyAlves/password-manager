@@ -1,0 +1,17 @@
+{
+  "name": "password_manager",
+  "version": "1.0.0",
+  "description": "A database connected password_manager",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "mongodb": "^6.21.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
