@@ -97,8 +97,7 @@ Armazena as senhas dos servições
 ```
 
 
-👨‍💻 Autor
-Luiggy Alves
+##👨‍💻 Autor: Luiggy Alves
 - Estudante de Ciência da Computação na Universidade Federal do Amazonas
 - Projeto desenvolvido como parte dos desafios propostos no livro: "Aprenda Node.js com Projetos reais", de Jonathan Wexler
 
