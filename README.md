@@ -1,93 +1,110 @@
 # 🔐 Password Manager (Node.js + MongoDB)
 
-Um **gerenciador de senhas em linha de comando (CLI)** desenvolvido em **Node.js**, utilizando **MongoDB** para persistência de dados e **bcrypt** para criptografia da senha mestre.
+A **command-line password manager (CLI)** developed in **Node.js**, using **MongoDB** for data persistence and **bcrypt** for master password encryption.
 
-Projeto com foco educacional para praticar **autenticação**, **hashing de senhas** e **integração com banco de dados**.
-
----
-
-## 📌 Funcionalidades
-
-- 🔑 Criação de senha mestre
-- 🔐 Autenticação com senha criptografada
-- 📂 Armazenamento de múltiplas senhas
-- 👀 Visualização das senhas salvas
-- ✏️ Criação e atualização de senhas
-- 🗄️ Persistência com MongoDB
-- 💻 Interface via terminal (CLI)
+This project has an educational focus, aimed at practicing **authentication**, **password hashing**, and **database integration**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📌 Features
 
-- Node.js
-- MongoDB
-- bcrypt
-- prompt-sync
-- ES Modules
+* 🔑 Master password creation
+* 🔐 Authentication with encrypted password
+* 📂 Storage of multiple passwords
+* 👀 Viewing saved passwords
+* ✏️ Creating and updating passwords
+* 🗄️ Data persistence with MongoDB
+* 💻 Terminal-based interface (CLI)
 
 ---
 
-## 📁 Estrutura do Banco de Dados
+## 🛠️ Technologies Used
 
-### 📂 Banco
+* Node.js
+* MongoDB
+* bcrypt
+* prompt-sync
+* ES Modules
 
-### 📄 Coleções
+---
+
+## 📁 Database Structure
+
+### 📂 Database
+
+### 📄 Collections
 
 #### auth
-Armazena o hash da senha mestre.
+
+Stores the master password hash.
 
 ```json
 {
   "type": "auth",
-  "hash": "<senha_criptografada>"
+  "hash": "<encrypted_password>"
 }
 ```
 
 #### passwords
-Armazena as senhas dos servições
+
+Stores service passwords.
 
 ```json
 {
   "source": "github",
-  "password": "minhaSenha123"
+  "password": "myPassword123"
 }
 ```
 
-## 🚀 Como Executar o Projeto
+---
 
-### 1️⃣ Pré-requisitos
-- Node.js
-- MongoDB rodando em localhost:27017
+## 🚀 How to Run the Project
 
-### 2️⃣ Clonar o repositório
-``` git clone https://github.com/seu-usuario/seu-repositorio.git```
+### 1️⃣ Prerequisites
 
-### 3️⃣ Instalar dependências
-```npm install```
+* Node.js
+* MongoDB running on localhost:27017
 
-### 4️⃣ Executar a aplicação
-```node index```
+### 2️⃣ Clone the repository
 
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
 
-## 🔄 Fluxo de Funcionamento
+### 3️⃣ Install dependencies
 
-1. Conecta ao MongoDB  
-2. Verifica se existe uma senha mestre  
+```bash
+npm install
+```
 
-### Se não existir:
-- Solicita a criação da senha mestre
-- Criptografa a senha usando bcrypt
-- Salva o hash no banco de dados
+### 4️⃣ Run the application
 
-### Se existir:
-- Solicita a senha mestre
-- Valida a senha utilizando `bcrypt.compare`
-- Exibe o menu principal
+```bash
+node index
+```
 
 ---
 
-## 📜 Menu de Opções
+## 🔄 Application Flow
+
+1. Connects to MongoDB
+2. Checks whether a master password already exists
+
+### If it does not exist:
+
+* Prompts the user to create a master password
+* Encrypts the password using bcrypt
+* Stores the hash in the database
+
+### If it exists:
+
+* Prompts for the master password
+* Validates the password using `bcrypt.compare`
+* Displays the main menu
+
+---
+
+## 📜 Menu Options
 
 ```text
 1. View passwords
@@ -96,9 +113,9 @@ Armazena as senhas dos servições
 4. Exit
 ```
 
+---
 
-## 👨‍💻 Autor: Luiggy Alves
-- Estudante de Ciência da Computação na Universidade Federal do Amazonas
-- Projeto desenvolvido como parte dos desafios propostos no livro: "Aprenda Node.js com Projetos reais", de Jonathan Wexler
+## 👨‍💻 Author: Luiggy Alves
 
-
+* Computer Science student at the Federal University of Amazonas
+* Project developed as part of the challenges proposed in the book *"Learn Node.js with Real Projects"* by Jonathan Wexler
