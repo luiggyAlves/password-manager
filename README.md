@@ -68,7 +68,7 @@ Stores service passwords.
 ### 2️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/luiggyAlves/password-manager
 ```
 
 ### 3️⃣ Install dependencies
